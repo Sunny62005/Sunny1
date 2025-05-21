@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Pharande - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-black text-gray-900 dark:text-white px-4 py-6 transition-colors duration-300">
+
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Dark Mode Toggle -->
+    <div class="flex justify-end mb-4">
+      <button id="theme-toggle" class="text-2xl bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-md shadow">
+        <span id="theme-icon">🌞</span>
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-br from-[#1BFFFF] to-blue-600 text-black text-center py-16 rounded-xl mb-8 shadow-lg">
+      <h1 class="text-4xl font-bold mb-2">Welcome to My Portfolio</h1>
+      <p class="text-lg">Hello, I'm <strong>Sunny Pharande</strong>. Here's my journey, achievements, and aspirations!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-900 border border-[#1BFFFF] rounded-xl mb-8 px-6 py-4 shadow">
+      <ul class="flex flex-wrap justify-around gap-4 text-[#1BFFFF] font-semibold">
+        <li><a href="#welcome" class="hover:text-[#66fcff]">Welcome</a></li>
+        <li><a href="#about" class="hover:text-[#66fcff]">About Me</a></li>
+        <li><a href="#achievements" class="hover:text-[#66fcff]">Achievements</a></li>
+        <li><a href="#goals" class="hover:text-[#66fcff]">Future Goals</a></li>
+        <li><a href="#personal" class="hover:text-[#66fcff]">Personal Side</a></li>
+        <li><a href="#github" class="hover:text-[#66fcff]">GitHub</a></li>
+        <li><a href="#best-practices" class="hover:text-[#66fcff]">Best Practices</a></li>
+        <li><a href="#contact" class="hover:text-[#66fcff]">Contact Me</a></li>
+        <li><a href="#quick-message" class="hover:text-[#66fcff]">Send Message</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="welcome" class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow mb-8">
+      <h2 class="text-2xl text-[#1BFFFF] font-bold mb-4">Welcome</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-4">
+        
+        <iframe 
+          class="w-full max-w-2xl md:max-w-3xl aspect-video rounded-lg shadow-lg" 
+          src="https://www.youtube.com/embed/HXHphpDJ9T0?si=03oqu9YuNm7RUUKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <!-- Main Content -->
+    <div class="space-y-16">
+
+      <!-- About Me -->
+      <section id="about" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">About Me</h2>
+        <p class="text-lg mb-4">I am a passionate Computer Engineer based in Mumbai, with a focus on Data Engineering and AI/ML. I am always eager to learn and grow in my field.</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Name:</strong> Sunny Pharande</li>
+          <li><strong>Location:</strong> Mumbai, India</li>
+          <li><strong>Education:</strong> Computer Engineering, St. John College of Engineering and Management</li>
+          <li><strong>Languages Known:</strong> C, Python, SQL</li>
+        </ul>
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">Achievements</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Completed a Data Engineering Internship at XYZ Corp. (2024)</li>
+          <li>Developed a real-time data processing pipeline using Apache Kafka (2023)</li>
+          <li>Won the "Best Innovator" award in a national coding competition (2022)</li>
+          <li>Deployed a machine learning model to predict stock prices (2021)</li>
+          <li>Contributed to open-source projects related to data engineering (2020)</li>
+        </ul>
+      </section>
+
+      <!-- Future Goals -->
+      <section id="goals" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">Future Goals</h2>
+        <p class="text-lg">My goal is to become a skilled Data Engineer who builds scalable, efficient, and secure data pipelines that power intelligent decision-making.</p>
+      </section>
+
+      <!-- Personal Side -->
+      <section id="personal" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-6">Personal Side</h2>
+
+        <p class="text-lg mb-4"><strong>Hobbies:</strong></p>
+        <ul class="list-disc pl-6 space-y-2 mb-6">
+          <li>Reading</li>
+          <li>Gaming</li>
+        </ul>
+
+        <p class="text-lg mb-4"><strong>Interests:</strong> Data Engineering, Cloud Computing, AI/ML</p>
+        <p class="text-lg mb-4"><strong>Role Models:</strong> Steve Jobs, A.P.J. Abdul Kalam</p>
+
+        <p class="text-lg mb-4"><strong>Favorite Books:</strong></p>
+        <ul class="list-disc pl-6 space-y-2 mb-6">
+          <li>"Deep Work" by Cal Newport</li>
+        </ul>
+
+        <p class="text-lg mb-4"><strong>Favorite Sites:</strong> GitHub, Notion, Zerodha</p>
+        <p class="text-lg mb-4"><strong>Favorite Movies:</strong> Interstellar, The Social Network</p>
+      </section>
+
+      <!-- GitHub Profile -->
+      <section id="github" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">GitHub Profile</h2>
+        <p class="text-lg">Check out my projects on GitHub:</p>
+        <a href="https://github.com/sherwin47" target="_blank">
+          <button class="bg-[#1BFFFF] hover:bg-[#66fcff] text-black px-6 py-2 rounded-lg mt-4">
+            Visit My GitHub &rarr;
+          </button>
+        </a>
+      </section>
+
+
+
+      <!-- Best Practices Followed -->
+      <section id="best-practices" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">Best Practices Followed</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Semantic HTML5 structure</li>
+          <li>Responsive layout</li>
+          <li>Consistent neon blue palette</li>
+          <li>Dark/Light mode support</li>
+          <li>Accessible design with alt texts</li>
+          <li>GitHub Pages deployment</li>
+        </ul>
+      </section>
+
+      <!-- Testimonials (Optional) -->
+      <section id="testimonials" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">Testimonials</h2>
+        <ul class="space-y-4">
+        <li>
+          <blockquote class="border-l-4 border-[#1BFFFF] pl-6 italic">
+            "Sunny is an exceptional problem-solver with deep technical expertise."
+            <footer class="mt-2 text-sm text-gray-500 dark:text-gray-400">– Tanmay</footer>
+          </blockquote>
+        </li>
+        </ul>
+      </section>
+
+      <section id="weather" class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow mb-8">
+        <h2 class="text-2xl text-[#1BFFFF] font-bold mb-4">Current Weather in Mumbai</h2>
+        <p id="weather-data" class="text-lg">Loading weather...</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-4">Contact Me</h2>
+        <ul class="space-y-4">
+          <li><strong>Phone:</strong> <a href="tel:+918847782768" class="text-[#1BFFFF] underline hover:text-[#66fcff]">+91 8847782768</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/918847782768" class="text-[#1BFFFF] underline hover:text-[#66fcff]" target="_blank">Chat with me</a></li>
+          <li><strong>Email:</strong> <a href="mailto:123sunny2108@sjcem.edu.in" class="text-[#1BFFFF] underline hover:text-[#66fcff]">123sunny2108@sjcem.edu.in</a></li>
+          <li>
+            <strong>Location:</strong>
+            <div class="mt-2 rounded overflow-hidden shadow-lg">
+              <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </li>
+          <li>
+            <strong>Socials:</strong>
+            <div class="flex gap-6 mt-4">
+              <a href="https://www.instagram.com/sunnypharande" target="_blank" class="hover:text-[#66fcff]">Instagram</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Send Message -->
+      <section id="send-message" class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-md mb-8">
+        <h2 class="text-3xl text-[#1BFFFF] font-bold mb-6">Send a Quick Message</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-6">
+          <div>
+            <label for="quick-name" class="block text-lg font-medium mb-1">Your Name</label>
+            <input type="text" id="quick-name" name="name" required
+             class="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-black dark:text-white">
+          </div>
+
+          <div>
+            <label for="quick-message" class="block text-lg font-medium mb-1">Message</label>
+            <textarea id="quick-message" name="message" rows="4" required
+                class="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-black dark:text-white"></textarea>
+          </div>
+
+          <button type="submit"
+            class="bg-[#1BFFFF] hover:bg-[#66fcff] text-black px-6 py-3 rounded-md font-semibold shadow">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+    </div>
+  </div>
+
+
+  <!-- Dark Mode Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const htmlEl = document.documentElement;
+
+    function updateIcon() {
+      themeIcon.textContent = htmlEl.classList.contains('dark') ? '🌙' : '🌞';
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      htmlEl.classList.add('dark');
+    }
+    updateIcon();
+
+    themeToggle.addEventListener('click', () => {
+      htmlEl.classList.toggle('dark');
+      localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+      updateIcon();
+    });
+  </script>
+
+  <!-- Weather API -->
+  <script>
+    async function fetchWeather() {
+      const weatherElement = document.getElementById("weather-data");
+      const weatherCodes = {
+        0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+        45: "Fog", 48: "Depositing rime fog", 51: "Light drizzle", 53: "Moderate drizzle",
+        55: "Dense drizzle", 56: "Freezing light drizzle", 57: "Freezing dense drizzle",
+        61: "Slight rain", 63: "Moderate rain", 65: "Heavy rain", 66: "Freezing light rain",
+        67: "Freezing heavy rain", 71: "Slight snow fall", 73: "Moderate snow fall",
+        75: "Heavy snow fall", 77: "Snow grains", 80: "Slight rain showers",
+        81: "Moderate rain showers", 82: "Violent rain showers", 85: "Slight snow showers",
+        86: "Heavy snow showers", 95: "Thunderstorm", 96: "Thunderstorm with slight hail",
+        99: "Thunderstorm with heavy hail"
+      };
+
+      try {
+        const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=19.0760&longitude=72.8777&current_weather=true");
+        const data = await response.json();
+        const temp = data.current_weather.temperature;
+        const code = data.current_weather.weathercode;
+        const condition = weatherCodes[code] || "Unknown";
+        weatherElement.textContent = `🌡️ ${temp}°C | 🌤️ Weather: ${condition}`;
+      } catch (error) {
+        weatherElement.textContent = "Unable to load weather data.";
+        console.error("Weather fetch error:", error);
+      }
+    }
+
+    fetchWeather();
+  </script>
+
+  <!-- JSON Data Fetch -->
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const achievementsList = document.getElementById('achievements-list');
+        data.achievements.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.title} (${item.year})`;
+          achievementsList.appendChild(li);
+        });
+
+        const booksList = document.getElementById('books-list');
+        data.books.forEach(book => {
+          const li = document.createElement('li');
+          li.textContent = book;
+          booksList.appendChild(li);
+        });
+
+        const hobbiesList = document.getElementById('hobbies-list');
+        data.hobbies.forEach(hobby => {
+          const li = document.createElement('li');
+          li.textContent = hobby;
+          hobbiesList.appendChild(li);
+        });
+
+        const testimonialsSection = document.createElement('section');
+        testimonialsSection.className = 'bg-white dark:bg-gray-900 p-6 rounded-xl shadow mb-8';
+        testimonialsSection.innerHTML = `<h2 class="text-2xl text-[#1BFFFF] font-bold mb-4">Testimonials</h2><ul class="space-y-4"></ul>`;
+        const testimonialList = testimonialsSection.querySelector('ul');
+        data.testimonials.forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `<blockquote class="border-l-4 border-[#1BFFFF] pl-4 italic">“${item.feedback}”<footer class="mt-2 text-sm text-gray-500 dark:text-gray-400">– ${item.name}</footer></blockquote>`;
+          testimonialList.appendChild(li);
+        });
+        document.querySelector('.max-w-5xl').appendChild(testimonialsSection);
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
+  </script>
+
+</body>
+</html>
